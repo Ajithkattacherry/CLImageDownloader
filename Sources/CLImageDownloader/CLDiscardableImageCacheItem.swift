@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CLDiscardableImageCacheItem: NSObject, NSDiscardableContent {
+public class CLDiscardableImageCacheItem: NSObject, NSDiscardableContent {
     private(set) public var image: UIImage?
     var accessCount: UInt = 0
     
