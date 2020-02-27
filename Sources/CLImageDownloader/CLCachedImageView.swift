@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CLCachedImageView: UIImageView {
+public class CLCachedImageView: UIImageView {
     public static let imageCache = NSCache<NSString, CLDiscardableImageCacheItem>()
     private var urlStringForChecking: String?
     private var emptyImage: UIImage?
@@ -25,7 +25,7 @@ class CLCachedImageView: UIImageView {
     ///
     /// - parameter urlString: The url location of your image, usually on a remote server somewhere.
     /// - parameter placehoderImage: to show placehoderImage till the originl image is downloaded
-    func loadImage(from urlString: String, placehoderImage: String? = nil) {
+    public func loadImage(from urlString: String, placehoderImage: String? = nil) {
         image = nil
         
         urlStringForChecking = urlString
